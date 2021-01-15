@@ -142,11 +142,11 @@ contract Token is StandardToken, Ownable {
     string public symbol;
     uint8 public decimals;
 
-    constructor(string memory _name, string memory _symbol, uint8 _decimals, uint256 _totalSupply) public {
-        name = _name;
-        symbol = _symbol;
-        decimals = _decimals;
-        totalSupply = _totalSupply;
+    constructor() public {
+        name = "anthatch";
+        symbol = "ATH";
+        decimals = 6;
+        totalSupply = 41390000;
         balances[msg.sender] = totalSupply;
     }
 }
